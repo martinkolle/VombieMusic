@@ -1,0 +1,104 @@
+.vombieMusicSong, .vombieMusicList{height:70px; margin-bottom:5px;border-radius:5px;background:#F3F3F3;}
+.vombieMusicSong{height:70px !important;}
+.vombieMusicList img, .vombieMusicSong img {margin:5px;border-radius:5px;-webkit-box-shadow: 0px 0px 1px #666;-moz-box-shadow: 0px 0px 1px #666;box-shadow: 0px 0px 1px #666;}
+.vombieMusicInner,.vombieMusicSongInner{padding:5px; height:60px;}
+.vombieMusicCategories{background:#F3F3F3;}
+#vombieMusicCategory{background:#F3F3F3;}
+a.vombieMusicCategories{text-decoration:none; font-size:30px; color:black;}
+
+/*Songs listing*/
+.vombieMusicSongName{color:#000000 !important;font-weight:bold;text-decoration:none; font-size:25px; border:1px;}
+span.vombieMusicSongArtist, .vombieMusicPlaylistsGenre{float:left; margin-top:28px;position:absolute; left:68px;color:#666; font-weight:bold; font-size:16px;}
+span.vombieMusicSongCountSong{float:right; margin-right:15px;margin-top:5px;}
+span.vombieMusicSongTime{color:#666; font-size:13px;}
+div.vombieMusicSongPlay{float:right;right:10px;position:absolute;margin-bottom:10px;text-align: right;}
+.vombieMusicSongPlay a{color:#F1F1F1 !important; text-decoration:none;}
+span.vombieMusicSongName{margin-top:10px;}
+
+.vombieMusicSongPlayListen{position:relative;top:5px;}
+.vombieMusicSongPlayReadMore{position: relative;top: 20px;}
+
+/*Buttons on song page*/
+.vombieMusicButton{width: 100px;padding: 2px 5px;display: block;text-align:center;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;}
+.vombieMusicButton.song{float:left;}
+
+.vombieMusicButton.green{
+background-color: #00922D;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#00922D), to(#00822D));
+background-image: -webkit-linear-gradient(top, #00922D, #00800D);
+background-image: -moz-linear-gradient(top, #00922D, #00800D);
+background-image: -ms-linear-gradient(top, #00922D, #00800D);
+background-image: -o-linear-gradient(top, #00922D, #00800D);
+background-image: linear-gradient(top, #00922D, #00800D);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#00922D', EndColorStr='#00800D');
+
+}
+.vombieMusicButton.grey{background: -webkit-gradient(linear, 50% 100%, 50% 0%, from(#CCC), to(#F1F1F1));background: -moz-linear-gradient(90deg, #CCC, #F1F1F1);filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CCCCCC', endColorstr='#F1F1F1');
+}
+.vombieMusicButton.grey a{color: #00922D !important;}
+
+
+/*view=[Song]*/
+
+h1#vombieMusic.song{font-size:40px; color:#00922D !important;text-shadow: 4px 4px 4px #CCC;}
+span#vombieMusicArtist.song{font-size:40px;color:#666;text-shadow:0px 0px 0px !important; font-style: italic !important;}
+#vombieMusicVideo.song{width:100%;background: black;margin-top: -10px;padding: 20px 0px 40px 0;border-radius:5px;-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);}
+#vombieMusicVideo-inner.song{width:600px; height:300px;margin: 0 auto;}
+
+#vombieMusicBox.song{margin-bottom:20px;margin-top: -8px; background:#F3F4F3;-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);}
+#vombieMusicBoxInner{padding: 0px 10px 10px 10px;min-height: 70px;margin-top: 20px;}
+
+
+#vombieMusicBar{width:100%; background:#00922D; height:40px; border-top-left-radius:5px;border-top-right-radius:5px;margin-bottom:10px; }
+#vombieMusicBar ul{ width:100%;position: absolute; margin:0;}
+div#vombieMusicBar ul li{float:left;list-style:none; color:white; width:22%; text-align: center!important;margin-left: 0px;margin-right: 0px;border-right: 1px solid #3C3C3C; }
+
+div#vombieMusicBar ul a:hover{background:red;}
+
+#vombieSongImage{width:100px; height:100px;float:right;position:absolute;right: 0;margin-top: -20px;}
+/*CAtegory*/
+
+.vombieMusicButton.category{width:160px !important; padding-top:5px !important; padding-bottom:5px !important;top: 95px;position: absolute;}
+
+.vombieMusicCategoryDesc{float:left; margin-top:20px;position:absolute; left:65px;color:#666; font-weight:bold; font-size:16px;}
+#vombieMusicTop{width:100%; height:115px; margin-bottom:20px;
+background-image:-webkit-gradient(linear, left top, left bottom, from(#00922D), to(#00822D)); 
+background-image:-webkit-linear-gradient(top, #00922D, #00800D); 
+background-image:-moz-linear-gradient(top, #00922D, #00800D); 
+background-image:-ms-linear-gradient(top, #00922D, #00800D); 
+background-image:-o-linear-gradient(top, #00922D, #00800D); 
+background-image:linear-gradient(top, #00922D, #00800D);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#00922D', EndColorStr='#00800D');
+border-radius:5px;
+-webkit-box-shadow: 10px 10px 10px #999;-moz-box-shadow: 0px 0px 4px #ccc; box-shadow: 0px 0px 4px #ccc; 
+}
+.vombieMusicTopDesc{float:left; width:60%; padding:7px;}
+.vombieMusicCategoryImg{float:right; width:100px; padding: 7px 7px 0 0}
+.vombieMusicCategoryImg img {height:100px; width:100px;border-radius:5px;}
+div.VombieMusicDescription p{margin-top: -15px;color: #05070F;font-size: 15px;}
+h2#vombieMusic {color:#F5BF10 !important; font-size:30px;}
+
+/*Playlists*/
+.vombieMusicPlaylistsGenre{text-transform:italic;}
+
+/***CORE OVERWRITE::BEEZ5***/
+
+#vombieMusicContainer a:hover,
+#vombieMusicContainer a:active,
+#vombieMusicContainer a:focus
+{
+	background:none !important;
+	color:black !important;
+}
+
+/****CORE OVERWRITE::tooltip *****/
+.tip-wrap .tip{background:transparent !important; border:0px !important;padding:0 !important;}
+#vombieTip{height:50px; width:50px; float:left;}
+.tip-wrap{border: 2px solid #CCC; border-radius:5px;}
+.tip-wrap img{max-width:250px; max-height:250px;}
+
+h2#vombieMusic{margin:0 !important;}

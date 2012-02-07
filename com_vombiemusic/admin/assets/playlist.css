@@ -1,0 +1,8 @@
+#sortable-list { padding:0; }
+#sortable-list li{ padding:4px 8px; color:#000; list-style:none; width:500px; background:#146295; margin:10px 0; border:1px solid #999; color:#fff; font-weight:bold;}
+#message-box{background:#fffea1; border:2px solid #fc0; padding:4px 8px; margin:0 0 14px 0; width:500px; }
+input.sortorder{width:12px; border-radius:6px; font-size:12px; height:12px; float:right; margin-right:10px;}
+.record{ padding:10px 20px; background:#eee; border-top:1px solid #ccc; width:300px; height:20px;}
+.ajaxDelete, #ajaxNewSave{ color:#f00 !important; display:block; width:40px; float:right; padding-left:10px; padding-top:1px;}
+#ajaxNewSave{color:green !important; font-weight:bold;}
+#ajaxSongName{border-radius:4px; border:1px solid green; height:15px; width:300px;}

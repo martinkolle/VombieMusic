@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields addfieldpath="/administrator/components/com_vombiemusic/models/fields">
+		<fieldset
+			name="songs"
+			label="COM_VOMBIEMUSIC_SONGS_SETTINGS">
+
+			<field 
+				type="spacer" 
+				name="videoSettings" 
+				label="COM_VOMBIEMUSIC_VIDEO_SETTINGS" 
+			/>
+			<field 
+				name="modalHeight" 
+				type="text" 
+				default="300"
+				label="COM_VOMBIEMUSIC_MODAL_YOUTUBE_HEIGHT" 
+				description="COM_VOMBIEMUSIC_MODAL_YOUTUBE_HEIGHT_DESC"
+			/>
+			<field 
+				name="modalWidth" 
+				type="text" 
+				default="425"
+				label="COM_VOMBIEMUSIC_MODAL_YOUTUBE_WIDTH" 
+				description="COM_VOMBIEMUSIC_MODAL_YOUTUBE_WIDTH_DESC"
+			/>
+			<field 
+				name="modalHd" 
+				type="list" 
+				default="1"
+				label="COM_VOMBIEMUSIC_MODAL_YOUTUBE_HD" 
+				description="COM_VOMBIEMUSIC_MODAL_YOUTUBE_HD_DESC"
+			>
+				<option value="1">COM_VOMBIEMUSIC_ACTIVATE</option>
+				<option value="0">COM_VOMBIEMUSIC_DISABLE</option>
+			</field>
+			<field 
+				name="modalAutoPlay" 
+				type="list" 
+				default="1"
+				label="COM_VOMBIEMUSIC_MODAL_YOUTUBE_AUTOPLAY" 
+				description="COM_VOMBIEMUSIC_MODAL_YOUTUBE_AUTOPLAY_DESC"
+			>
+				<option value="1">COM_VOMBIEMUSIC_ACTIVATE</option>
+				<option value="0">COM_VOMBIEMUSIC_DISABLE</option>
+			</field>
+
+			<field 
+				name="iframeHeight" 
+				type="text" 
+				default="300"
+				label="COM_VOMBIEMUSIC_IFRAME_HEIGHT" 
+				description="COM_VOMBIEMUSIC_MODAL_IFRAME_HEIGHT_DESC"
+			/>
+			<field 
+				name="iframeWidth" 
+				type="text" 
+				default="425"
+				label="COM_VOMBIEMUSIC_IFRAME_WIDTH" 
+				description="COM_VOMBIEMUSIC_IFRAME_WIDTH_DESC"
+			/>
+
+
+			<field
+				type="spacer" 
+				name="viewSettings" 
+				label="COM_VOMBIEMUSIC_SONG_VIEW_SETTINGS" 
+			/>
+			<field 
+				name="songReadMore" 
+				type="list" 
+				default="1"
+				label="COM_VOMBIEMUSIC_SONG_READ_MORE" 
+				description="COM_VOMBIEMUSIC_SONG_READ_MORE_DESC"
+			>
+				<option value="1">COM_VOMBIEMUSIC_YES</option>
+				<option value="0">COM_VOMBIEMUSIC_NO</option>
+			</field>
+		</fieldset>
+			<fieldset
+				name="playlists"
+				label="COM_VOMBIEMUSIC_PLAYLISTS_SETTINGS"
+			>
+				<field 
+					name="playlistsViewSongs"
+					type="list"
+					default="1"
+					label="COM_VOMBIEMUSIC_PLAYLISTS_VIEW_SONGS" 
+					description="COM_VOMBIEMUSIC_PLAYLISTS_VIEW_SONGS"
+					>
+					<option value="1">COM_VOMBIEMUSIC_YES</option>
+					<option value="0">COM_VOMBIEMUSIC_NO</option>
+				</field>
+
+			<field
+				type="spacer" 
+				name="viewSettings" 
+				label="COM_VOMBIEMUSIC_PLAYLIST_VIEW_SETTINGS" 
+			/>
+				<field 
+					name="playlistsReadMore"
+					type="list"
+					default="1"
+					label="COM_VOMBIEMUSIC_PLAYLISTS_VIEW_READMORE" 
+					description="COM_VOMBIEMUSIC_PLAYLISTS_VIEW_READMORE"
+					>
+					<option value="1">COM_VOMBIEMUSIC_YES</option>
+					<option value="0">COM_VOMBIEMUSIC_NO</option>
+				</field>
+				<field 
+					name="playlistsImageTooltip"
+					type="list"
+					default="1"
+					label="COM_VOMBIEMUSIC_PLAYLISTS_VIEW_TOOLTIP" 
+					description="COM_VOMBIEMUSIC_PLAYLISTS_VIEW_TOOLTIP"
+					>
+					<option value="1">COM_VOMBIEMUSIC_YES</option>
+					<option value="0">COM_VOMBIEMUSIC_NO</option>
+				</field>
+		</fieldset>
+		<fieldset
+				name="playlist"
+				label="COM_VOMBIEMUSIC_PLAYLIST_SETTINGS"
+			>
+			<field 
+				name="playlistImageTooltip"
+				type="list"
+				default="1"
+				label="COM_VOMBIEMUSIC_PLAYLISTS_VIEW_TOOLTIP" 
+				description="COM_VOMBIEMUSIC_PLAYLISTS_VIEW_TOOLTIP"
+			>
+					<option value="1">COM_VOMBIEMUSIC_YES</option>
+					<option value="0">COM_VOMBIEMUSIC_NO</option>
+			</field>
+		</fieldset>
+		<fieldset
+			name="backend"
+			label="COM_VOMBIEMUSIC_SETTINGS_BACKEND"
+		>
+			<field 
+				name="shortcutBackend"
+				type="list"
+				default="1"
+				label="COM_VOMBIEMUSIC_SETTINGS_SHORTCUT" 
+				description="COM_VOMBIEMUSIC_SETTINGS_SHORTCUT_DESC"
+			>
+					<option value="1">COM_VOMBIEMUSIC_YES</option>
+					<option value="0">COM_VOMBIEMUSIC_NO</option>
+			</field>
+		</fieldset>
+		<fieldset 
+			name="video"
+			label="COM_VOMBIEMUSIC_SETTINGS_VIDEO"
+		>
+			<field 
+				name="videoPlugin"
+				type="videoplugin"
+				label="COM_VOMBIEMUSIC_SETTINGS_VIDEO_PLUGIN"
+			/>
+		</fieldset>
+	</fields>
+</config>

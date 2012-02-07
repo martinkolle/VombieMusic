@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VOMBIEBLOG_SONG_VIEW_DEFAULT">
+		<message>COM_VOMBIEBLOG_SONG_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_vombiemusic/models/fields"
+>
+			<field
+				name="id"
+				type="vombiemusicsong"
+				label="COM_VOMBIEMUSIC_MENU_SONG_CHOOSE"
+				description="COM_VOMBIEMUSIC_MENU_SONG_CHOOSE_DESC"
+			/>
+		</fieldset>
+	</fields>
+</metadata>

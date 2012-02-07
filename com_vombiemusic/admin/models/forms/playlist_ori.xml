@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="playlist">
+	<fieldset name="playlist">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="name"
+			type="text"
+			label="COM_VOMBIEMUSIC_PLAYLIST_NAME"
+			description="COM_VOMBIEMUSIC_PLAYLIST_NAME_DESC"
+			size="40"
+			class="inputbox"
+			default=""
+		/>
+		<field
+			name="published"
+			type="list"
+			label="COM_VOMBIEMUSIC_PLAYLIST_PUBLISHED"
+			description="COM_VOMBIEMUSIC_PLAYLIST_PUBLISHED_DESC"
+			class="inputbox"
+			default="1"
+		>
+		<option name="1">COM_VOMBIEMUSIC_PLAYLIST_PUBLISHED_YES</option>
+		<option name="0">COM_VOMBIEMUSIC_PLAYLIST_DISABLED_NO</option>
+	</field>
+
+		<field
+			name="info"
+			type="editor"
+			label="COM_VOMBIEMUSIC_PLAYLIST_INFO"
+			description="COM_VOMBIEMUSIC_PLAYLIST_INFO_DESC"
+			size="40"
+			class="inputbox"
+			default=""
+		/>
+	</fieldset>
+</fields>
+<fields name="right">
+<!--	<fieldset name="playlistsongs">
+		<field
+			name="playlist_songs"
+			type="vombiemusiclistallplaylistsongs"
+			label="COM_VOMBIEMUSIC_PLAYLIST_ALL"
+		/>
+	</fieldset> -->
+   <fieldset name="publishing">
+
+   		<field
+			name="image"
+			type="media"
+			directory="media/com_vombiemusic"
+			label="COM_VOMBIEMUSIC_PLAYLIST_IMAGE"
+			description="COM_VOMBIEMUSIC_PLAYLIST_IMAGE_DESC"
+			size="40"
+			class="inputbox"
+			default=""
+		/>
+		<field
+			name="publish_up"
+			type="calendar"
+			label="VOMBIEMUSIC_SONG_PUBLISH"
+			description="VOMBIEMUSIC_SONG_PUBLISH_DESC"
+			class="inputbox" size="20"
+			format="%Y-%m-%d %H:%M:%S"
+			filter="user_utc" />
+       <field
+			name="publish_down"
+			type="calendar"
+			label="VOMBIEMUSIC_SONG_UNPUBLISH"
+			description="VOMBIEMUSIC_SONG_UNPUBLISH_DESC"
+			class="inputbox" size="20"
+			format="%Y-%m-%d %H:%M:%S"
+			filter="user_utc" />
+		<field
+			name="created_by"
+			type="user"
+			label="VOMBIEMUSIC_SONG_CREATED_BY"
+			description="VOMBIEMUSIC_SONG_CREATED_BY_DESC" />
+		<field
+			name="created_by_alias"
+			type="text"
+			label="VOMBIEMUSIC_SONG_CREATED_BY_ALIAS"
+			description="VOMBIEMUSIC_SONG_CREATED_BY_ALIAS"
+			class="inputbox"
+			size="20" />
+	</fieldset>
+	<fieldset name="metadata">
+        
+        <field
+			name="browser_title"
+			type="text"
+			label="VOMBIEMUSIC_BROWSER_TITLE"
+			description="VOMBIEMUSIC_BROWSER_TITLE_DESC"
+			class="inputbox"
+		/>
+		<field
+			name="metakey"
+			type="textarea"
+			label="VOMBIEMUSIC_SONG_KEYWORDS"
+			description="VOMBIEMUSIC_SONG_KEYWORDS_DESC"
+			class="inputbox"
+			rows="3"
+			cols="30" />
+		<field
+			name="metadesc"
+			type="textarea"
+			label="VOMBIEMUSIC_SONG_DESCRIPTION"
+			description="VOMBIEMUSIC_SONG_DESCRIPTION_DESC"
+			class="inputbox"
+			rows="3"
+			cols="30" 
+		/>
+	</fieldset>
+</fields>
+</form>

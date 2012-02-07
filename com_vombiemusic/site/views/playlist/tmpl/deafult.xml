@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VOMBIEMSUSIC_VIEW_PLAYLIST">
+		<message>COM_VOMBIEMSUSIC_VIEW_PLAYLIST_DESC</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_vombiemusic/models/fields"
+>
+			<field
+				name="id"
+				type="VombieMusicPlaylistCategory"
+				extension="com_vombiemusic"
+				label="COM_VOMBIEMUSIC_MENU_PLAYLIST_CHOOSE"
+				description="COM_VOMBIEMUSIC_MENU_PLAYLIST_CHOOSE_DESC"
+			/>
+		</fieldset>
+	</fields>
+</metadata>

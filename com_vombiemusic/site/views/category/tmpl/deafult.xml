@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VOMBIEMSUSIC_VIEW_CATEGORY">
+		<message>COM_VOMBIEMSUSIC_VIEW_CATEGORY_DESC</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_vombiemusic/models/fields"
+>
+			<field
+				name="id"
+				type="category"
+				extension="com_vombiemusic"
+				label="COM_VOMBIEMSUSIC_CATEGORY"
+				description="COM_VOMBIEMSUSIC_CATEGORY_DESC"
+			/>
+		</fieldset>
+	</fields>
+</metadata>
