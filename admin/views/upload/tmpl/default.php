@@ -1,22 +1,22 @@
 <?php
 
 defined('_JEXEC') or die;
+JToolBarHelper::title(JText::_('COM_VOMBIEMUSIC_VIEW_UPLOAD'));
 
 ?>
-
-<div id="swfuploader">
-	<form id="form1" action="index.php" method="post" enctype="multipart/form-data">
-	<fieldset class="adminform">
- 
-			<div class="fieldset flash" id="fsUploadProgress">
-			<span class="legend">Upload Queue</span>
-			</div>
-		<div id="divStatus">0 Files Uploaded</div>
-			<div>
-				<span id="spanButtonPlaceHolder"></span>
-				<input id="btnCancel" type="button" value="Cancel All Uploads" onclick="swfu.cancelQueue();" disabled="disabled" style="margin-left: 2px; font-size: 8pt; height: 29px;" />
- 
-			</div>
-	</fieldset>
-	</form>
+<form id="upload" action="index.php?option=com_vombiemusic&task=uploadFile&tmpl=component" method="POST" enctype="multipart/form-data">
+<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="30000000" />
+<div>
+	<div id="filedrag">Drop files here</div>
 </div>
+<div id="submitbutton">
+	<input type="file" id="fileselect" name="fileselect[]" multiple="multiple" />
+	<button type="submit">Upload Files</button>
+</div>
+</form>
+<div id="progress"></div>
+<div id="messages"></div>
+<script type="text/javascript" src="components/com_vombiemusic/assets/filedrag.js"></script>
+
+<?php
+	echo $this->loadTemplate('files');

@@ -7,12 +7,14 @@
 		/>
 		<field
 			name="name"
+			id="title"
 			type="text"
 			label="COM_VOMBIEMUSIC_SONG_NAME"
 			description="COM_VOMBIEMUSIC_SONG_NAME_DESC"
 			size="40"
 			class="inputbox"
 			default=""
+			required="required"
 		/>
 		<field
 			name="artist"
@@ -79,20 +81,9 @@
 			default=""
 		/>
 		<field
-			name="document1"
-			type="media"
-			directory="media/com_vombiemusic/document"
-			label="COM_VOMBIEMUSIC_SONG_SONG_DOCUMENT_1"
-			description="COM_VOMBIEMUSIC_SONG_SONG_DOCUMENT_DESC"
-			size="40"
-			class="inputbox"
-			default=""
-		/>
-		<field
-			name="document2"
-			type="media"
-			directory="media/com_vombiemusic/document"
-			label="COM_VOMBIEMUSIC_SONG_SONG_DOCUMENT_2"
+			name="document"
+			type="vombiemusicupload"
+			label="COM_VOMBIEMUSIC_SONG_SONG_DOCUMENT"
 			description="COM_VOMBIEMUSIC_SONG_SONG_DOCUMENT_DESC"
 			size="40"
 			class="inputbox"

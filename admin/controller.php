@@ -157,11 +157,9 @@ class VombieMusicController extends JController
 	@TODO: 		just add token system for security reason
 	@return 	simple json <- not json at all...
 */
-
 	function ajaxSearchSongs(){
 
 		//JRequest::checkToken('get') or die( JText::_('Invalid Token'));
-
 		$db = JFactory::getDBO();
 		$min = 3;
 		$max = 50;
@@ -184,7 +182,6 @@ class VombieMusicController extends JController
 			if (++$current < $count):
 				echo ','; 
     		endif;
-
 		}
 		echo " ]";
 	}
@@ -257,11 +254,68 @@ ac2 = new CwAutocompleter( \'ajaxSongName\', \'index.php?option=com_vombiemusic&
 			$html = "<div id=\"message-box\">".JText::_('VOMBIEMUSIC_SAVE_AND_REOPEN')."</div>";
 		}
 		else {
-			$html .='<div class="allSongs" id="allSongs"></div>
+			$html .='
+			<div id="message"></div>
+			<div class="allSongs" id="allSongs"></div>
 			<div class="record" id="songNameBox"><input type="text" id="ajaxSongName" name="ajaxSongName" /></div>';
 
 		}
 	echo $html;
 	}
-}
+
+	function deletePlugin($name, $type){
+	
+	jimport('joomla.filesystem.file');
+
+		//JRequest::checkToken('get') or die;
+		$allowedTypes 	= array('video'); //TODO: get from params
+		//
+		$disAllowFiles 	= array('youtube.com.php','dailymotion.com.php');
+		$path 			=  JPATH_SITE.DS.'components'.DS.'com_vombiemusic'.DS.'plugin'.DS.$type;
+		$file 			= $name.'.php';
+
+		
+		if(in_array($type,$allowedTypes) && !in_array($file,$disAllowFiles)){
+			JFile::delete($path.$file);
+		}			
+	}
+
+	function uploadFile(){
+
+	jimport('joomla.filesystem.file');
+
+
+	$getfile 	= (isset($_SERVER['HTTP_X_FILENAME']) ? $_SERVER['HTTP_X_FILENAME'] : false);
+	$path 		= JPATH_COMPONENT . DS . "uploads" . DS;
+	$allowedExt = array('pdf','jpeg','jpg','png','txt','doc','docx');
+
+	if ($getfile) {
+		$file 		= JFile::makeSafe($getfile);
+		$ext 		= strtolower(JFile::getExt($file));
+
+		if(in_array($ext, $allowedExt)){
+			if (file_put_contents($path . $file,file_get_contents('php://input')))
+				{echo "1";}
+			else{echo "0";}
+		}
+		else{echo JText::_('COM_VOMBIEMUSIC_FILE_EXTENSIONS_NOT_SUPPORTED');}
+	exit();
+	}
+	else {
+		$files = $_FILES['fileselect'];
+		foreach ($files['error'] as $id => $err) {
+			if ($err == UPLOAD_ERR_OK) {
+			$fn 	= $files['name'][$id];
+			$ext 	= strtolower(JFile::getExt($fn));
+				if(in_array($ext, $allowedExt)){
+					if (JFile::upload($files['tmp_name'][$id],$path . $fn))
+						 {echo "1";}
+					else {echo "0";}
+				}
+				else{echo JText::_('COM_VOMBIEMUSIC_FILE_EXTENSIONS_NOT_SUPPORTED');}
+			}
+		}
+	}
+	}//end fnction
+}//end class
 

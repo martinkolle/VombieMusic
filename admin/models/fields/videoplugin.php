@@ -29,6 +29,7 @@ class JFormFieldVideoPlugin extends JFormField
 			
 			foreach($fileList as $file){	
 				$html .='<div style="height:20px; padding:10px; font-size:20px; border-bottom:2px solid #ccc;">'. str_replace('.php', '', $file);
+				$html .= '<span onclick="removePluginVideo("'.$file.'",video)" style="float:right;">'.JText::_('COM_VOMBIEMUSIC_DELETE').'</span>';
 				$html .= '</div>';
 			}
 			

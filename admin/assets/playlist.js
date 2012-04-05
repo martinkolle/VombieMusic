@@ -25,9 +25,9 @@ function ordering(id,order){
     url: urltoupdate,
     method: 'get',
     onSuccess: function(){ 
-      $('171').setStyle('background','green'); 
-      $('message').appendText('Ordering Updated:' + id);
       updatePlaylist(); 
+      $().setStyle('background','green'); 
+      $('message').set('text','Ordering Updated:' + id);
     }
   }).send();
 

@@ -27,6 +27,14 @@ class VombieMusicViewSong extends JView
 		// Set the toolbar
 		$this->addToolBar();
 		$this->setLayout('edit');
+		$document = JFactory::getDocument();
+
+		$document->addScriptDeclaration('
+		function addDocumentUpload(title) {
+			document.getElementById("jform_document").value = title;
+			SqueezeBox.close();
+	}
+		');
  
 		// Display the template
 		parent::display($tpl);
